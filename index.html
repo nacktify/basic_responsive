@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basic responsive design</title>
     <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+        }
+
         .container {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -46,10 +51,17 @@
                 grid-template-columns: repeat(3, 1fr);
                 padding: 50px;
             }
+
             .card {
-                width: 150px;
-                height: auto;
+                /* width: auto;
+                height: auto; */
                 margin: 0 auto;
+            }
+            .card img{
+                width: 100%;
+            border-radius: 10px;
+            border-bottom-left-radius: 0;
+            box-shadow: 0 3px 20px black;
             }
         }
     </style>
